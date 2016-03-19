@@ -54,12 +54,17 @@ faces = faceCascade.detectMultiScale(
 print "Found {0} faces!".format(len(faces))
 
 
-# In[54]:
+# In[59]:
 
 # Draw a rectangle around the faces
 for (x, y, w, h) in faces:
     cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
 im = Image.fromarray(img)
-im.show
+im.show()
+
+
+# In[ ]:
+
+
 
