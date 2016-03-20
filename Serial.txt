@@ -1,3 +1,5 @@
+Source: http://playground.arduino.cc/Interfacing/Python
+
 1. Get PySerial: https://pypi.python.org/pypi/pyserial
 2. In Pyton interpreter, enter: import serial
 3. Initiating python serial com: arduino = serial.Serial(‘COM7’, 9600, timeout=.1)
