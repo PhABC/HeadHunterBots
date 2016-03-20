@@ -1,0 +1,14 @@
+1. Get PySerial: https://pypi.python.org/pypi/pyserial
+2. In Pyton interpreter, enter: import serial
+3. Initiating python serial com: arduino = serial.Serial(‘COM7’, 9600, timeout=.1)
+4. Write 
+
+time.sleep(1) #give the connection a second to settle
+arduino.write("Hello from Python!")
+while True:
+	data = arduino.readline()
+	if data:
+		print data.rstrip('\n') #strip out the new lines for now
+		# (better to do .read() in the long run for this reason
+
+in the Python code
